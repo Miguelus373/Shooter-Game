@@ -19,9 +19,15 @@ const submitScore = (name, points) => {
 const getScores = async () => {
   const data = await fetch(URL);
   const scores = await data.json();
+  const leaderboard = [];
 
-  const leaderboard = scores.result
-    .sort((a, b) => (a.score > b.score ? -1 : 1));
+  scores.result
+    .sort((a, b) => (a.score > b.score ? -1 : 1))
+    .forEach(c => {
+      if (leaderboard.every(d => d.user !== c.user) && leaderboard.length < 5) {
+        leaderboard.push(c);
+      }
+    });
 
   return leaderboard;
 };
