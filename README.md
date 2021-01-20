@@ -1,41 +1,42 @@
 # Debugger
 
-> This is a keybord shooter game. Bugs are trying to infest your system and 
-> you need to stop them sing your keyboard to type the word on top of them
+> This is a shooter game. Bugs are trying to infest your system and 
+> you need to stop them using your keyboard to type the word on top of them
 
 ## Built With
 
 - Javascript ES6
 - Phaser 3
 - WebPack
-- HTML
+- Words and Scores APIs
+- HTML / CSS
 - VS Code
-
-## Live Demo
-
-> To checkout this game online go [here](https://miguelus373.github.io/Debugger-Game/)
 
 ## How to Play
 
-When you first open the game, you will see a loading screen. Once it finishes loading all the assets it will show you the main menu of the game.
+When you first open the game, you will see a loading screen. Once it finishes loading all the assets, it will show you the main menu of the game.
 
 ![screenshot](./menu-screenshot.png) 
 
-To Play you will need a keyboard and good reflexes. Just click on the "Star Game" button and the game will begin, be ready!
+To Play you will need a keyboard and good reflexes. You first need to enter your name in the field on top. Then click on the "Start Game" button, the game will begin immediately, be ready!
 
 ![screenshot](./game-screenshot.png)
 
-Once the game has begun, bugs will try to catch you (the blue turret at the bottom) to stop them, type the word on top of them without any mistake. If you mistype one letter you will have to start that word over. 
+Once the game has begun, bugs will try to catch you (you are the blue turret at the bottom) to stop them, type the word on top of them with no mistakes. If you mistype one letter you will have to start over with that word. 
 
 - The score increases when you shoot a bug
 - The lengthier the word the more points you get
 - Once you shoot all bugs, more bugs are going to spawn immediately
 - The more waves of bugs you survive the more lengthier the words become (more points!)
-- If any bug touches you, the game is over
+- If a bug touches you, the game is over and you will see the Leaderboard
+
+## Live Demo
+
+> To play this game online go [here](https://miguelus373.github.io/Debugger-Game/)
 
 ## How to Install
 
-> If you want to have this game on your local machine just follow these simple step
+> If you want to have this game on your local machine just follow these simple steps
 
 ### Pre-requisites
 
@@ -70,6 +71,14 @@ To set up this project locally we will need:
 
 - Github: [@miguelus373](https://github.com/miguelus373)
 - Linkedin: [Miguel-Uzcátegui](https://www.linkedin.com/in/miguelus/)
+
+## Acknowledgment
+
+This game is inspire by the [ztype](https://zty.pe/) typing game
+
+All the assets for this game come from [OpenGameArt](https://opengameart.org/)
+
+The bug words come from this amazing [word API](https://github.com/RazorSh4rk/random-word-api)
 
 
 ## 🤝 Contributing
